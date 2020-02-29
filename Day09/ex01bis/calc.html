@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day09/ex01bis/calc.html</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<input type="text" id="left">
+	<select id="operators">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+	<input type="text" id="right">
+	<input type="submit" id="submit" value="Try me!">
+	<script>
+		$('#submit').on('click', function () {
+            if (!$('#left').val().trim().match(/^[0-9]+$/))
+                return sendMessage('Error :(');
+            if (!$('#right').val().trim().match(/^[0-9]+$/))
+                return sendMessage('Error :(');
+            var nbr1 = Number($('#left').val().trim());
+            var nbr2 = Number($('#right').val().trim());
+            var opr = $('#operators').val();
+            if ((opr === '/' || opr === '%') && nbr2 == 0)
+				return sendMessage('It\'s over 9000!');
+			var res = eval(`${nbr1}${opr}${nbr2}`);
+			sendMessage(res);
+		});	
+		setInterval(() => window.alert('Please, use me...'), 30000);
+		function sendMessage(msg) 
+        {
+			console.log(msg);
+			window.alert(msg);
+		}
+	</script>
+</body>
+</html>

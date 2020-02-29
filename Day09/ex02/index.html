@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day09/ex02/index.html</title>
+    <style>
+        * { box-sizing: border-box; }
+		#ft_list {
+			border: 1px solid #f0f0f0;
+			border-radius: 6px;
+		}
+		#ft_list > .task {
+			padding: 1em;
+			border-bottom: 1px solid transparent;
+			transition: .25s cubic-bezier(.19,1,.22,1) all;
+			cursor: pointer;
+		}
+		#ft_list > .task:not(:last-of-type) {
+			border-bottom-color: #f0f0f0;
+		}
+		#ft_list > .task:hover {
+			background: #f5f5f5;
+		}
+    </style>
+</head>
+<body>
+    <h2>TO-DO</h2>
+    <button id="new-button">New</button>
+    <div id="ft_list"></div>
+    <script src="todo.js"></script>
+</body>
+</html>

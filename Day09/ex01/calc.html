@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Day09/ex01/calc.html</title>
+</head>
+<body>
+	<input type="text" id="left">
+	<select id="operators">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+	<input type="text" id="right">
+	<input type="submit" id="submit" value="Try me!">
+	<script>
+		const left = document.getElementById('left');
+		const right = document.getElementById('right');
+		const operators = document.getElementById('operators');
+		const submit = document.getElementById('submit');
+		submit.addEventListener('click', () => {
+			if (!left.value.trim().match(/^[0-9]+$/))
+				return sendMessage('Error :(');
+			if (!right.value.trim().match(/^[0-9]+$/))
+				return sendMessage('Error :(');
+			var nbr1 = Number(left.value.trim());
+			var nbr2 = Number(right.value.trim());
+			var opr = operators.value;
+			var res;
+			if ((opr === '/' || opr === '%') && nbr2 == 0)
+				res = "It’s over 9000!";
+			else
+				res = eval(`${nbr1}${opr}${nbr2}`);
+			sendMessage(res);
+		});
+		setInterval(() => window.alert("Please, use me..."), 30000);
+		function sendMessage(msg)
+		{
+			console.log(msg);
+			window.alert(msg);
+		}
+	</script>
+</body>
+</html>

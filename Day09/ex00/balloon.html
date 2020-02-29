@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>day09/ex00/balloon.html</title>
+</head>
+<body>
+	<div id="balloon"></div>
+	<style>
+		#balloon 
+		{
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+			background: red;
+			border-radius: 50%;
+		}
+	</style>
+	<script>
+		const	balloon = document.getElementById('balloon');
+		const	colors = ['red', 'green', 'blue'];
+		var		index = 0;
+		balloon.addEventListener('click', () => {
+			var size = balloon.offsetWidth + 10;
+			if (size > 420)
+				size = 200;
+			balloon.style.width = balloon.style.height = `${size}px`;
+			index = (index + 1) % colors.length;
+			balloon.style.background = colors[index];
+		});
+		balloon.addEventListener('mouseleave', () => {
+			var size = balloon.offsetWidth - 5;
+			if (size < 200)
+				size = 200;
+			balloon.style.width = balloon.style.height = `${size}px`;
+			index--;
+			if (index < 0)
+				index = 2;
+			balloon.style.background = colors[index];
+		});
+    </script>
+</body>
+</html>
