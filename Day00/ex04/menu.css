@@ -1,0 +1,56 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   menu.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fbertazz <fbertazz@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/03 19:52:23 by fbertazz          #+#    #+#             */
+/*   Updated: 2019/12/03 21:18:22 by fbertazz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+*{margin: 0; padding: 0;}
+ 
+body{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 1.2vw;
+}
+/* Border definition */
+.menu{
+	list-style:none; 
+	border:.1vw solid #c0c0c0; 
+	float:left; 
+}
+/* Style menu items, pos:relative to fit submenu*/
+.menu li{
+	position:relative; 
+	float:left;
+	border-right:.1vw solid #c0c0c0; 
+}
+/* Link style without mouse over*/
+.menu li a{color:#333; text-decoration:none; padding:.5vw 1.0vw; display:block;}
+ /* Style with light and shadows when mouse over button */
+.menu li a:hover{
+	background:#333;
+	color:#fff;
+	-moz-box-shadow:0 .3vw 1.0vw 0 #CCC;
+	-webkit-box-shadow:0 .3vw 1.0vw 0 #ccc;
+	text-shadow:0vw 0vw .5vw #fff;
+}
+/* Submenu style */
+.menu li  ul{
+	position:absolute; 
+	top:2.5vw; 
+	left:0;
+	background-color:#fff; 
+	display:none;
+}
+/* Exhibit submenu */
+.menu li:hover ul, .menu li.over ul{display:block;}
+/* Remove list bullets, add border and width */
+.menu li ul li{
+	border:.1vw solid #c0c0c0; 
+	display:block; 
+	width:15.0vw;
+}

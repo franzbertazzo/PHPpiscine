@@ -1,0 +1,6 @@
+The Matrix Class takes care of Matrices and transformations 
+
+Matrix mult( Matrix $rhs ) : returns the multiplication of both matrices.
+
+Vertex transformVertex( Vertex $vtx ) : returns a new vertex resulting from
+the transformation of the vertex by the matrix.

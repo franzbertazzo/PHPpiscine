@@ -1,0 +1,57 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- doft.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: fbertazz <marvin@42.fr>                    +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/12/03 15:47:14 by fbertazz          #+#    #+#            -->
+<!-- Updated: 2019/12/03 15:47:16 by fbertazz         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doft</title>
+</head>
+<body style="background-color: rgb(82, 82, 82);">
+    <link rel="stylesheet" href="doft.css">
+    <div class="box" id="Title">
+        <img style="margin: 10px" width="500px" height="150px" src="./resources/day_of_the_42.png" alt="Day of the forty two" title="Day of the forty two"/>
+        <img style="position: absolute; top: 20px; right: 50px" width="275px" height="175px" src="./resources/loupe.png" alt="Loupe" title="Loupe"/>
+        <a href="https://www.disney.com"><img style="position: absolute; top: 10px; right: 10px" width="30px" height="30px" src="./resources/reload.png" alt="Start from the beginning" title="Start from the beginning"/></a>
+        <a href="https://www.relaischateaux.com."><img style="position: absolute; bottom: 10px; right: 10px" width="30px" height="30px" src="./resources/close.gif" alt="Disconnect" title="Disconnect"/></a>
+    </div>
+    <div class="box3" id="Actions">
+        <img style="position: absolute; top: 10px; left: 38px" width="100px" height="100px" src="./resources/arrow.png" alt="Advance" title="Advance"/>
+        <img style="position: absolute; top: 125px; left: 38px" width="100px" height="100px" src="./resources/main.png" alt="Take" title="Take"/>
+        <div class="box5">
+            <img class="oeil" width="90px" height="90px" src="./resources/oeil.png" alt="Look" title="Look"/>
+        </div>
+        <img style="position: absolute; top: 355px; left: 38px" width="100px" height="100px" src="./resources/outil.png" alt="Use" title="Use"/>
+        <img style="position: absolute; top: 460px; left: 38px" width="100px" height="100px" src="./resources/chat-icon.png" alt="Speak" title="Speak"/>
+    </div>
+    <div class="box2" id="Cluster">
+        <img style="margin:10px" width="1180px" height="750px" src="./resources/cluster.jpg" alt="Code Zone" usemap="#map" title="Code Zone"/>
+        <map name="map">
+            <area alt="Screen" title="Screen" href="https://www.apple.com" shape="poly" coords="940,415,1150,430,1150,600,940,570"/>
+            <area alt="Chair" title="Chair" href="https://www.ikea.com" shape="poly" coords="400,430,474,465,474,600,404,600"/>
+        </map>
+    </div>
+    <div class="box4" id="inventory">
+        <img style="position: absolute; top: 10px; left: 38px" width="100px" height="140px" src="./resources/book.png" alt="Book" title="Book"/>
+        <img style="position: absolute; top: 165px; left: 38px" width="100px" height="90px" src="./resources/towel.png" alt="Towel" title="Towel"/>
+        <div style="position: absolute; top: 270px; left: 12px; background-image: url(./resources/brick.jpg)" id="bricks" width="150px" height="100px" alt="Bricks" title="Bricks"></div>
+    </div>
+    <div class="ballon" id="ReplyBaloon">
+        Vous <span style="font-size: 30pt; font-family: serif;">entrez</span> alors dans une grande piece remplie <br/>
+        d'<span style="text-shadow: 4px 4px 4px red">ordinateurs...</span><br/>
+        <span style="font-style: italic;">- Bonjour, vous êtes nouveau ici ?</span><br/>
+        <input type="text" name="Reply" size="60" title="Reply">   <input type="submit" value="Repondre" title="Repondre"></button>
+    </div>
+    </div>
+</body>
+</html>

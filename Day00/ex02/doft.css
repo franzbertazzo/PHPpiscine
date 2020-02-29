@@ -1,0 +1,98 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   doft.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fbertazz <fbertazz@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/03 15:47:32 by fbertazz          #+#    #+#             */
+/*   Updated: 2019/12/03 17:26:11 by fbertazz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+.box {
+    grid-area: top;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px black;
+    position: absolute;
+    width: 1650px;
+    top: 20px;
+    background-color: rgb(144, 144, 144);
+    margin: auto;
+    left: 100px;
+}
+.box2 {
+    grid-area: middle;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px black;
+    position: absolute;
+    width: 1200px;
+    height: 770px;
+    top: 200px;
+    left: 325px;
+    background-color: rgb(144, 144, 144);
+    margin: 10px;
+}
+.box3 {
+    grid-area: left;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px black;
+    position: absolute;
+    width: 175px;
+    height: 600px;
+    top: 200px;
+    left: 120px;
+    background-color: rgb(144, 144, 144);
+    margin: 10px;
+}
+.box4 {
+    grid-area: right;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px black;
+    position: absolute;
+    width: 175px;
+    height: 600px;
+    top: 200px;
+    left: 1570px;
+    background-color: rgb(144, 144, 144);
+    margin: 10px;
+}
+.box5 {
+    border: 7px solid red;
+    border-radius: 5%;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 240px;
+    left: 32px;
+    padding: 5px;
+    background-color: rgb(144, 144, 144);
+}
+.oeil {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 5px;
+    background-color: rgb(144, 144, 144);
+}
+#bricks{
+    background-repeat: repeat;
+    background-size: 27%;
+    min-height: 90px;
+    min-width: 150px;
+}
+.ballon{
+    z-index: 1;
+    position: absolute;
+	padding-top: 5px;
+	padding-left: 15px;
+    text-align: left;
+    font-family: sans-serif;
+	background-color: rgb(96, 248, 129);
+	width: 500px;
+	height: 175px;
+	top: 900px;
+    left: 90px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px black;
+}

@@ -1,0 +1,24 @@
+The Color Class handles RGB color values you can pass individual
+R,G,B or a positive integer to be instantiated
+
+• The Color Class must have a __toString method. See example output for formatting.
+
+• The Class includes a Boolean static attribute called verbose to control the
+displays related to the use of the Class. This attribute is initially False.
+
+• If and only if the static attribute verbose is true, then the Class constructor and
+destructor will produce an output.
+
+• The Class haves a static method called doc that returns the documentation of
+the class in a string. (in this specific case the documentation does not have to be
+long).
+
+• The Class has a method called add that allows you to add the the components
+of the current instance to the components of another instance argument. The
+resulting color is a new instance.
+
+• The Class has a method called sub that allows you to substract the components of the current instance to the components of another instance argument.
+The resulting color is a new instance.
+
+• The Class has a method called mult that allows you to multiply the components of the current instance to the components of of another instance argument.
+The resulting color is a new instance.

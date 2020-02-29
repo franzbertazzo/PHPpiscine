@@ -1,0 +1,23 @@
+This Class Handles the Camera object
+
+’origin’: The vertex positioning the camera in the world mark. Thanks to this
+vertex, we can compute a vector and then a translation matrix.
+
+’orientation’: Rotation matrix orienting the camera in the world mark.
+
+’width’: Width in pixel of the desired image. Is used to compute the ratio. Not
+compatible with the ’ratio’ key.
+
+’height’: Height in pixel of the desired image. Is used to compute the ratio. Not
+compatible with the ’ratio’ key.
+
+’ratio’: Image’s ratio. Not compatible with the ’width’ and ’height’ keys.
+
+’fov’ : The projected image’s field of view in in degree.
+
+’near’ : The near clipping plane.
+
+’far’ : The far clipping plane.
+
+Vertex watchVertex( Vertex $worldVertex ) : Transforms "world" coordinates
+vertex into a "screen" coordinates vertex (a pixel basically).

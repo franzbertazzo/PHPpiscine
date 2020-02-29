@@ -1,0 +1,5 @@
+The Class Vertex represents a vertex acording to a position and color using x y z cartesian coordintes 
+and an optional w value for homogeneous coordinates and an instance of the Color class for the color
+
+if not specified the default color is white and w 1;
+
